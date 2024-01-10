@@ -1,0 +1,9 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: github
+spec:
+  host: "staging.preview.splunkbase.splunk.com"
+  trafficPolicy:
+    tls:
+      mode: SIMPLE
